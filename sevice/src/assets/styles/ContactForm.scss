@@ -1,0 +1,107 @@
+
+.contactForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 460px;
+    height: auto;
+    // background-color: rgb(37, 11, 11);
+    // padding: 20px;
+    border-radius: 8px;
+    // background-image: linear-gradient(
+    //   to right,
+    //   rgba(71, 6, 6, 1),
+    //   rgb(37, 3, 9),
+    //   rgba(71, 6, 6, 1)
+    // );
+    // box-shadow: 0 0.2rem 0.2rem rgb(15, 13, 13);
+    color: #07241c;
+    font-weight: 300;
+    h2 {
+      font-size: 1.8rem;
+      color: #07241c;
+      font-weight: 350;
+    }
+    .input-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+      font-size: 18px;
+      input {
+        width: 350px;
+        margin-left: 5%;
+        height: 50px;
+        background: transparent;
+        border-radius: 6px;
+        font-size: 16px;
+        // color: white;
+        margin: 8px 5px;
+        padding: 0 15px;
+      }
+      textarea {
+        height: 200px;
+        width: 350px;
+        resize: none; 
+        background: transparent;
+        border: solid 2px black;
+        border-radius: 6px;
+        font-size: 16px;
+        margin: 8px 0;
+        padding: 15px;
+      }
+      input:focus {
+        border: 2px solid  #07241c;
+        outline: none;
+      }
+      textarea:focus {
+        border: 2px solid #07241c;
+        outline: none;
+      }
+    }
+    button {
+      width: 350px;
+      padding: 10px;
+      margin-top: 10px;
+      background-color: #07241c;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 18px;
+      color:white;
+      font-weight: 400;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .contactForm {
+    display: block;
+    form {  
+      width: 100%;
+      height: auto;
+      padding: 0;
+        .input-box {
+        display: flex;
+        flex-direction: column; 
+        input {
+          width: 100%;
+          height: 50px;
+        }
+        textarea {
+          height: 200px;
+        }
+      }
+      button {
+        width: 90%;
+        padding: 10px;
+        margin: 10px 0;
+        background-color: #07241c;
+      }
+    }
+  }
+}
